@@ -4,6 +4,7 @@ import path from 'path';
 const timestamp = new Date().getTime();
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/demo/',
   plugins: [react()],
 
   resolve: {
