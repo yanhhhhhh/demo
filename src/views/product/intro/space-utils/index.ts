@@ -32,7 +32,10 @@ export async function initApplyScene() {
     (window as any)['applySpace'] = space;
 
     space.scene.background = new Color(0xcccccc);
-    const object = await space.loadModel('/model/scene.glb', false);
+    const object = await space.loadModel(
+      `${import.meta.env.BASE_URL}/model/scene.glb`,
+      false
+    );
 
     applySceneCallback && applySceneCallback(space);
 

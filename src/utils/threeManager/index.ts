@@ -116,7 +116,7 @@ export class Space {
     this.scene = this.initScene();
     this.camera = this.initCamera();
     const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath('/model/draco/');
+    dracoLoader.setDecoderPath(`${import.meta.env.BASE_URL}/model/draco/`);
     this.gltfLoader.setDRACOLoader(dracoLoader);
     this.renderer = this.initRenderer();
     this.rendererCSS2D = this._initRenderCSS2D();

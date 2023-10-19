@@ -13,7 +13,7 @@ import SceneA from '../components/sceneA';
 import cover0 from '@/assets/images/size-comparison0.webp';
 import cover1 from '@/assets/images/size-comparison1.png';
 import globalContext, { GlobalOpt } from '@/providers/globalContext';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 function ProductDetail() {
   const ref = useRef(null);
@@ -48,7 +48,7 @@ function ProductDetail() {
         <div className={styles['intro-scene']}>
           <HeroScene
             ref={ref}
-            model="/model/hero.glb"
+            model={`${import.meta.env.BASE_URL}/model/hero.glb`}
             id={spaceHeroId}
             modelLoadedCallback={heroSceneLoadedCallback}
           />
