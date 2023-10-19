@@ -1,0 +1,273 @@
+.box {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.9rem;
+  
+  .posPlusSize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .row {
+    margin: 0.64rem auto;
+    width: 14.12rem;
+
+    .boxl {
+      flex: 1;
+      margin-right: 0.48rem;
+      > h3 {
+        font-size: 0.45rem;
+        margin-bottom: 0.45rem;
+        line-height: 0.7rem;
+      }
+      > p {
+        font-size: 0.26rem;
+      }
+    }
+    
+    .boxr {
+      width: 9.6rem;
+      height: 7.2rem;
+
+      color: #fff;
+      text-align: center;
+
+      position: relative;
+
+      .bgBox {
+        .posPlusSize();
+        z-index: 2;
+  
+        .cover {
+          .posPlusSize();
+  
+          transition: all .5s;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+
+          .title {
+            color: #fff;
+            font-size: 0.24rem;
+            text-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+            -webkit-background-clip: text;
+          }
+        }
+      }
+
+      .lineBox {
+        width: 100%;
+        
+        
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: 3;
+
+        .title {
+          position: relative;
+          width: calc(100% / 3);
+          line-height: 0.35rem;
+          height: 1rem;
+          padding-bottom: 0.3rem;
+
+          font-size: 0.24rem;
+          text-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+          -webkit-background-clip: text;
+
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.1rem;
+            background-color: rgba(56,102,247,0.15);
+  
+          }
+  
+          &.active {
+            &::after {
+              background-color: rgba(56,102,247,0.35);
+              border-radius: 0.05rem;
+            }
+          }
+        }
+      }
+  
+      // .dotBox {
+      //   .posPlusSize();
+      //   z-index: 3;
+      //   .dot {
+      //     flex: 1;
+      //     height: 100%;
+      //     cursor: pointer;
+
+      //     > span {
+      //       display: inline-block;
+
+      //       &.title {
+      //         font-size: 0.24rem;
+      //         text-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+      //         -webkit-background-clip: text;
+      //       }
+
+      //       &.deco {
+      //         display: block;
+      //         width: 0.56rem;
+      //         height: 0.56rem;
+      //         opacity: 1;
+      //         transition: .1s;
+      //         transform: translateZ(0);
+      //         margin: 0 auto;
+    
+      //         &:focus  {
+      //           outline: none !important;
+      //         }
+      //         > i {
+      //           background: hsla(0, 0%, 100%, .8);
+      //           border: 1px solid #fff;
+      //           border-radius: 100%;
+      //           height: 0.4rem;
+      //           left: 50%;
+      //           position: absolute;
+      //           top: 50%;
+      //           transform: translate3d(-50%, -50%, 0) scale(.5);
+      //           transition: .4s;
+      //           width: 0.4rem;
+      //         }
+      //         &::before {
+      //           content: "";
+      //           left: 50%;
+      //           position: absolute;
+      //           top: 50%;
+      //           transform: translate3d(-50%, -50%, 0) scale(.75);
+      //           transition: .4s;
+      //           border: 1px solid hsla(0, 0%, 100%, .3);
+      //           border-radius: 100%;
+      //           height: 0.72rem;
+      //           width: 0.72rem;
+      //         }
+      //         &::after {
+      //           content: "";
+      //           left: 50%;
+      //           position: absolute;
+      //           top: 50%;
+      //           transform: translate3d(-50%, -50%, 0) scale(.75);
+      //           transition: .4s;
+      //           border: 1px solid hsla(0, 0%, 100%, .1);
+      //           border-radius: 100%;
+      //           height: 0.56rem;
+      //           width: 0.56rem;
+      //         }
+      //       }
+      //     }
+
+      //     &:hover {
+      //       .deco {
+      //         &::before {
+      //           animation: scalepulse 1.3s linear .3s infinite both;
+      //           transform: translate3d(-50%, -50%, 0) scale(1);
+      //         }
+      //         &::after {
+      //           animation: scalepulse 1.3s linear .15s infinite both;
+      //           transform: translate3d(-50%, -50%, 0) scale(1);
+      //         }
+      //       }
+
+      //       .title {
+      //         font-weight: bold;
+      //       }
+      //     }
+
+      //     &:not(:last-child) {
+      //       border-right: 1px solid rgba(255, 255, 255, .3);
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+.tabletUI() {
+
+  .row {
+    padding-top: calc((100vh - 8rem) / 2);
+    width: 10.3rem;
+
+    .boxr {
+      width: 6.4rem;
+      height: 5.4rem;
+    }
+  }
+}
+
+.mobileUI() {
+  .col {
+    padding: 0.4rem 0.22rem 0;
+    > h3 {
+      font-size: 0.22rem;
+      line-height: 0.35rem;
+      text-align: center;
+    }
+    > p {
+      font-size: 0.14rem;
+      line-height: 0.3rem;
+      color: #888888;
+      margin-top: 0.12rem;
+      
+    }
+    .bottom {
+      width: 3.2rem;
+      height: 2.4rem;
+      margin-top: 0.2rem;
+
+      position: relative;
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      > p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 0.36rem;
+        background: rgba(0,0,0,0.502);
+
+        line-height: 0.36rem;
+        text-align: center;
+
+        color: #fff;
+        font-size: 0.18rem;
+      }
+    }
+  }
+}
+
+// ipad 竖屏
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+  .box, .tablet {
+    .tabletUI;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box, .mobile {
+    padding-bottom: 0.8rem;
+    .mobileUI;
+  }
+}

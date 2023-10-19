@@ -1,0 +1,95 @@
+.detail {
+  .intro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 1.1rem;
+    &-scene {
+      width: 60vw;
+      height: 60vh;
+      margin-bottom: 10vh;
+    }
+  }
+
+  .comparision0,
+  .comparision1 {
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .comparision0 {
+    width: 100%;
+
+    position: relative;
+    > header {
+      position: absolute;
+      top: 0.9rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .comparision1 {
+    width: 100%;
+  }
+}
+
+.mobileUI() {
+  .intro {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 0.7rem;
+    &-scene {
+      width: 90vw;
+      height: 60vh;
+      margin-bottom: 2vh;
+    }
+  }
+  .comparision0 {
+    height: unset;
+
+    > header {
+      top: 0;
+    }
+  }
+
+  .comparision1 {
+    height: unset;
+  }
+}
+
+.tabletUI() {
+  .detail {
+    .intro {
+      width: 100vw;
+      height: 70vh;
+      &-scene {
+        width: 70vw;
+        height: 50vh;
+        margin-bottom: 5vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .tabletUI;
+}
+
+// 手机 小屏幕
+@media screen and (max-width: 480px) {
+  .detail,
+  .mobile {
+    .mobileUI;
+  }
+}

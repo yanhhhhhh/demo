@@ -1,0 +1,79 @@
+{
+  "welcome": "welcome",
+  "currencySign": "$",
+  "button": {
+    "subscribeNow": "Subscribe Now",
+    "learnMore": "Learn more",
+    "restoreTheInitialViewpoint": "Restore the initial viewpoint",
+    "UseOfSolarEnergyDuringTheDay": "Use of solar energy during the day",
+    "BlackoutPeriod": "Blackout period"
+  },
+  "header": {
+    "threeFeatures": "Three features",
+    "digitalShowroom": "Digital showroom",
+    "SizeComparison": "Size comparison",
+    "productSpecifications": "Product specifications",
+    "photovoltaicPanelSpecifications": "Photovoltaic panel specifications",
+    "product": "product"
+  },
+  "components": {
+    "PVChargingPort": "PV Charging Port",
+    "ACChargingPort": "AC Charging Port",
+    "PowerButton": "Power button",
+    "ACOutlet": "AC Outlet"
+  },
+  "specifications": {
+    "batteryTypes": "battery types",
+    "monocrystalline": "monocrystalline",
+    "panelSize": "panel Size",
+    "productWeight": "product weight",
+    "cellWeight": "cell weight",
+    "numberOfCells": "Number of Cells",
+    "maximumPower": "maximum power",
+    "powerTolerance": "power tolerance",
+
+    "dimensions": "dimensions",
+    "outputVoltage": "output voltage",
+    "batteryCellCapacity": "battery cell capacity",
+    "ratedOutputPower": "rated output power",
+    "chargingMode": "charging mode",
+    "ratedChargingPower": "rated charging power",
+    "protectionLevel": "IP Level",
+    "cycleLife": "Lifespan",
+    "operatingTemp": "operating temperature"
+  },
+  "desc": {
+    "qualityPriceRatio": "quality-price ratio",
+    "easyToUse": "easy-to-use",
+    "safer": "safer",
+    "1kWhHighCapacityHighLongLifespancellSystem": "1kWh high capacity high long lifespancell system",
+    "1kWhHighCapacityHighLongLifespancellSystem2": "1kWh high capacity <br />high long lifespancell system",
+    "1kWhHighCapacityHighLongLifespancellSystemDesc": "Through the battery system's high reliability, long life, high energy efficiency of the trinity of the integrated role, so that \"renewable energy + energy storage\" in the whole life cycle of the cost of electricity more advantageous.",
+    "220VAC": "220V AC",
+    "220VACCharging": "220V AC charging",
+    "220VACChargingDesc": "Starting from high security materials, system security, and total life cycle security, Hithium does not miss any possibility to improve security.",
+    "ACOutputAvailableWhenChargedByPVPanels": "AC output available when charged by PV Panels",
+    "ACOutputAvailableWhenChargedByPVPanels2": "AC output available <br />when charged by PV Panels",
+    "ACOutputAvailableWhenChargedByPVPanelsDesc": "Actively embrace customer needs and enhance customer experience with flexible and innovative solutions.",
+    "energyStorageKitWeeklyLease": "Energy Storage Kit Weekly Lease",
+    "energyStorageKitMonthlyLease": "Energy Storage Kit Monthly Lease",
+    "energyStorageKitAnnualLease": "Energy Storage Kit Annual Lease",
+    "energyStorageKits": "Energy Storage Kits",
+    "weeklyPaymentTouseTheKit": "Weekly payment to use the kit",
+    "monthlyPaymentToUseTheKit": "Monthly payment to use the kit",
+    "annualPaymentToUseTheKit": "Annual payment to use the kit",
+    "onetimePayment": "One-time payment",
+    "leaseSystem": "Lease system",
+    "ttzVACInputPhotovoltaicCharging": "220V AC input/photovoltaic charging",
+    "maximum200W": "Maximum 200W",
+    "tenThousandChargeAndDischargeCycles": "10000 charge/discharge cycles",
+    "oneOff": "One-off",
+    "unsubscribeAtAnytime": "Unsubscribe at anytime"
+  },
+  "devices": {
+    "lightBulb": "light bulb",
+    "coolingFan": "cooling fan",
+    "television": "television",
+    "cellphone": "cellphone"
+  }
+}

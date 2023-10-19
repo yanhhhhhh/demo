@@ -1,0 +1,42 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100vw;
+  height: 0.64rem;
+  padding: 0 2vw;
+
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .logo {
+    width: 1.43rem;
+    height: 0.4rem;
+    cursor: pointer;
+    > img {
+      width: 100%;
+    }
+  }
+}
+
+.tabletUI() {
+  .nav, .tablet {
+    height: 0.88rem;
+  }
+  
+}
+
+// ipad 竖屏
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+  .tabletUI;
+}
+
+
+// 手机 小屏幕 平板
+@media screen and (max-width: 480px) {
+  .nav, .mobile {
+    height: 0.44rem;
+  }
+}

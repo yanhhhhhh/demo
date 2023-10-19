@@ -1,0 +1,80 @@
+{
+  "welcome": "欢迎",
+  "currencySign": "￥",
+  "button": {
+    "subscribeNow": "立即订阅",
+    "learnMore": "了解更多",
+    "restoreTheInitialViewpoint": "还原初始视角",
+    "UseOfSolarEnergyDuringTheDay": "白天使用太阳能",
+    "BlackoutPeriod": "停电时段"
+  },
+  "header": {
+    "threeFeatures": "三大优势",
+    "digitalShowroom": "数字展厅",
+    "SizeComparison": "尺寸对比",
+    "productSpecifications": "产品参数",
+    "photovoltaicPanelSpecifications": "光伏板参数",
+    "product": "产品介绍"
+  },
+  "components": {
+    "PVChargingPort": "光伏接口",
+    "ACChargingPort": "AC充电口",
+    "PowerButton": "按钮开关",
+    "ACOutlet": "插座"
+  },
+  "specifications": {
+    "batteryTypes": "电池类型",
+    "monocrystalline": "单晶",
+    "panelSize": "组件尺寸",
+    "productWeight": "产品重量",
+    "cellWeight": "电池片重量",
+    "numberOfCells": "电池片数量",
+    "maximumPower": "最大功率",
+    "powerTolerance": "功率公差",
+
+    "dimensions": "产品尺寸",
+    "outputVoltage": "电能输出",
+    "batteryCellCapacity": "电芯容量",
+    "ratedOutputPower": "额定输出功率",
+    "chargingMode": "充电方式",
+    "ratedChargingPower": "额定充电功率",
+    "protectionLevel": "防护等级",
+    "cycleLife": "使用寿命",
+    "operatingTemp": "工作温度"
+    
+  },
+  "desc": {
+    "qualityPriceRatio": "性价比",
+    "easyToUse": "简单易用",
+    "safer": "安全性",
+    "1kWhHighCapacityHighLongLifespancellSystem": "1kWh大容量长寿命电芯系统",
+    "1kWhHighCapacityHighLongLifespancellSystem2": "1Kwh容量高经济<br />耐用型单电芯系统",
+    "1kWhHighCapacityHighLongLifespancellSystemDesc": "通过电池系统的高可靠、长寿命、高能效三位一体的综合作用，让“可再生能源＋储能”在全生命周期的度电成本上更具优势。",
+    "220VAC": "220V交流电",
+    "220VACCharging": "220V交流充电",
+    "220VACChargingDesc": "从高安全性材料，系统安全，与全生命周期安全出发，海辰不放过任何一个提升安全的可能性。",
+    "ACOutputAvailableWhenChargedByPVPanels": "光伏板充电时也支持交流放电",
+    "ACOutputAvailableWhenChargedByPVPanels2": "光伏板充电时<br />也支持交流放电",
+    "ACOutputAvailableWhenChargedByPVPanelsDesc": "积极拥抱客户需求，用灵活创新的解决方案提升客户体验。",
+    "energyStorageKitWeeklyLease": "储能套件周度订阅",
+    "energyStorageKitMonthlyLease": "储能套件月度订阅",
+    "energyStorageKitAnnualLease": "储能套件年度订阅",
+    "energyStorageKits": "储能套件",
+    "weeklyPaymentTouseTheKit": "按周付费订阅使用设备",
+    "monthlyPaymentToUseTheKit": "按月付费订阅使用设备",
+    "annualPaymentToUseTheKit": "按年付费订阅使用设备",
+    "onetimePayment": "买断",
+    "leaseSystem": "订阅制",
+    "ttzVACInputPhotovoltaicCharging": "220V交流电输入/光伏充电",
+    "maximum200W": "最高200W",
+    "tenThousandChargeAndDischargeCycles": "10000次充放循环",
+    "oneOff": "一次性",
+    "unsubscribeAtAnytime": "可随时取消订阅"
+  },
+  "devices": {
+    "lightBulb": "电灯",
+    "coolingFan": "电风扇",
+    "television": "电视机",
+    "cellphone": "手机"
+  }
+}

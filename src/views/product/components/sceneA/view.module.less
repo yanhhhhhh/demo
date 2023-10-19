@@ -1,0 +1,203 @@
+.specsBox {
+  @content-width: 13.6rem;
+  background-color: #EAEAEA;
+
+  :global {
+    .hero-flex {
+      font-size: 0.28rem;
+    }
+  }
+
+  .specsBoard {
+    width: @content-width;
+    // font-size: 0.28rem;
+    .specs-item {
+      height: 1.2rem;
+      // line-height: 0.4rem;
+      
+      background-color: #fff;
+      > span {
+        display: inline-block;
+        padding-left: 0.4rem;
+
+        text-align: left;
+        
+        &.title {
+          width: 2.52rem;
+          color: #888888;
+        }
+
+        &.value {
+          font-weight: bold;
+          flex: 1;
+          padding-right: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .specs {
+    width: 100%;
+    
+    &.proSpecs {
+      padding: 0.9rem 0 1.8rem;
+  
+      .specsBoard {
+        margin-top: 0.6rem;
+        .specs-item {
+          width: 50%;
+          &:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8) {
+            background-color: #FAFAFA;
+          }
+        }
+      }
+    }
+  }
+
+  .photovoltaicPanelSpecs {
+    padding-bottom: 0.84rem;
+
+    .content {
+      width: @content-width;
+      margin-top: 0.6rem;
+
+      .cover {
+        width: 50%;
+        height: 7.2rem;
+        background: url("@/assets/images/photovoltaicPanelSpecs.png") no-repeat center bottom / cover;
+      }
+
+      .specsBoard {
+        width: 50%;
+        .specs-item {
+          width: 100%;
+          &:nth-child(even) {
+            background-color: #FAFAFA;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobileUI() {
+  
+  .specsBox, .mobile {
+    padding: 0 0.27rem;
+    :global {
+      .hero-flex {
+        font-size: 0.12rem;
+      }
+    }
+    .specsBoard {
+      width: 100%;
+      // font-size: 0.12rem;
+      line-height: 0.17rem;
+  
+      .specs-item {
+        height: 0.4rem;
+        background-color: unset;
+        &:nth-child(even) {
+          background-color: #FAFAFA;
+        }
+  
+        &:last-child {
+          border-radius: 0 0 0.1rem 0.1rem;
+        }
+  
+        &:not(:last-child) {
+          border-bottom: 1px solid #EAEAEA;
+        }
+  
+        > span {
+          
+          &.title {
+            padding-left: 0.3rem;
+            width: 1.2rem;
+          }
+
+          &.value {
+            padding-left: 0.14rem;
+            padding-right: 0.24rem;
+          }
+        }
+      }
+    }
+    .specs {
+      &.proSpecs {
+        padding: 0.4rem 0 0.8rem;
+  
+        .specsBoard{
+          margin-top: 0.2rem;
+          .specs-item {
+            width: 100%;
+  
+            &:first-child {
+              border-radius: 0.1rem 0.1rem 0px 0px;
+            }
+  
+            &:nth-child(odd) {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  
+    .photovoltaicPanelSpecs {
+      padding-bottom: 0.4rem;
+      .content {
+        width: 100%;
+        margin-top: 0.2rem;
+        .cover {
+          width: 100%;
+          height: auto;
+          background: unset;
+  
+          > img {
+            width: 100%;
+            height: auto;
+            min-height: 2.8rem;
+  
+            border-radius: 0.1rem 0.1rem 0px 0px;
+          }
+        }
+  
+        .specsBoard {
+          width: 100%;
+          transform: translateY(-6px);
+          .specs-item {
+            &:nth-child(odd) {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabletUI() {
+
+  :global {
+    .hero-flex {
+      font-size: 0.3rem;
+    }
+  }
+  .specsBox, .tablet {
+    @content-width: 11rem;
+    .specsBoard, .photovoltaicPanelSpecs >.content {
+      width: @content-width;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:portrait) {
+  .tabletUI;
+}
+
+// 手机 小屏幕 平板
+@media screen and (max-width: 480px) {
+  .mobileUI;
+}
